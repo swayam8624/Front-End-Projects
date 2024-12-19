@@ -25,14 +25,15 @@ nav.addEventListener("mouseleave", function (e) {
             amount:0.1
         }
     })
+    tl.to("#nav-bottom", {
+        height: "0vh",
+        // duration:0.2
+    })
     tl.to(".nav-part2 h5", {
         display: "none",
         duration:0.01
     })
-    tl.to("#nav-bottom", {
-        height: "0vh",
-        duration:0.3
-    })
+    
 })
 }
 
