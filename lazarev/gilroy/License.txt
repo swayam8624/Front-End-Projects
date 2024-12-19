@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 Fontspring Desktop/Webfont EULA v1.70
 
@@ -143,7 +142,6 @@ This EULA, in conjunction with the invoice (“Invoice”) that accompanies each
 The Parties may modify or amend this EULA in writing.
 
 13. Waiver. The waiver of one breach or default hereunder shall not constitute the waiver of any subsequent breach or default.
-=======
 
 Fontspring Desktop/Webfont EULA v1.70
 
@@ -288,4 +286,3 @@ This EULA, in conjunction with the invoice (“Invoice”) that accompanies each
 The Parties may modify or amend this EULA in writing.
 
 13. Waiver. The waiver of one breach or default hereunder shall not constitute the waiver of any subsequent breach or default.
->>>>>>> 42d9741e85c34819f881bf102ed1e0e4680530f3
