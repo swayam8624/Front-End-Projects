@@ -37,4 +37,16 @@ nav.addEventListener("mouseleave", function (e) {
 })
 }
 
-navAnimation()
+// navAnimation()
+
+let right = document.querySelectorAll(".right-elem")
+let rightimg = document.querySelectorAll(".right-elem img")
+
+right.forEach(function (elem) {
+    elem.addEventListener("mouseenter", function (e) {
+    elem.childNodes[5].style.opacity=1
+    })
+    elem.addEventListener("mouseleave", function (e) {
+    elem.childNodes[5].style.opacity=0
+    })
+})
