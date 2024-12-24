@@ -39,7 +39,7 @@ nav{
     display: flex;
     align-items: flex-start;
     width: 100% ;
-    height: 12vh;
+    height: 10vh;
     padding: 2vw 10.5vw;
     justify-content: space-between;
     background-color: #111;
@@ -602,6 +602,9 @@ nav button svg{
     white-space: nowrap;
     margin-top: 4vw;
     margin-left: 6vw;
+    position: sticky;
+    top: 15%;
+    bottom: 20%;
 }
 
 #page5 button svg {
@@ -723,8 +726,6 @@ nav button svg{
     border-top: 2px solid #fff;
 }
 
-
-
 summary::marker {
     content: "";
 }
@@ -738,4 +739,22 @@ summary::marker {
     padding: 3vh 0;
 
     border-top: 1px solid #333;
+}
+
+#page6{
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    padding: 10vh 10vw
+}
+
+#page6> h1{
+    font-size: 6vw;
+    color: #000;
+    padding-left: 21vw;
+    line-height: 6vw;
+    font-family: neue-haas-grotesk-display,sans-serif;
+    font-weight: 800;
+    padding-bottom: 5vh;
+    border-bottom: 1px solid #DADADA;
 }
