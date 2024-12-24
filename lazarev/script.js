@@ -104,15 +104,13 @@ function Page3animation() {
                 })
             })
 }
-
 // 875 , 630
-
 Page3animation()
 
 
 function page3VideoAnimation() {
-    var page3Center = document.querySelector(".page3-center")
-    var video = document.querySelector("#page3 video")
+    let page3Center = document.querySelector(".page3-center")
+    let video = document.querySelector("#page3 video")
 
     page3Center.addEventListener("click", function () {
         video.play()
@@ -131,8 +129,8 @@ function page3VideoAnimation() {
         })
     })
 
-
-    var sections = document.querySelectorAll(".sec-right")
+    // page 4 video animation
+    let sections = document.querySelectorAll(".sec-right")
 
     sections.forEach(function (elem) {
         elem.addEventListener("mouseenter", function () {
@@ -148,3 +146,51 @@ function page3VideoAnimation() {
 }
 
 page3VideoAnimation()
+
+
+function Hover4Animation(targetSelector , hoverSelector) {
+   const target = document.querySelector(targetSelector);
+    const hoverElement = target.querySelector(hoverSelector);
+    const icon = hoverElement.querySelector(".icon i");
+
+    target.addEventListener("mouseenter", function () {
+        icon.classList.remove("ri-play-fill");
+        icon.classList.add("ri-arrow-right-up-line");
+
+        gsap.to(hoverElement, {
+            opacity: 1,
+            scale: 1,
+        });
+
+        gsap.fromTo(
+            icon,
+            { scale: 0.8, opacity: 0 },
+            { scale: 1, opacity: 1, duration: 1.5, ease: "power2.out" }
+        );
+    });
+
+    target.addEventListener("mouseleave", function () {
+        gsap.to(hoverElement, {
+            opacity: 0,
+            scale: 0,
+        });
+
+        icon.classList.remove("ri-arrow-right-up-line");
+        icon.classList.add("ri-play-fill");
+
+        gsap.to(icon, { scale: 1, duration: 0.3 });
+    });
+
+    target.addEventListener("mousemove", function (e) {
+        const bounds = hoverElement.getBoundingClientRect();
+
+        gsap.to(hoverElement, {
+            x: e.x -1100,
+            y: e.y -550,
+        });
+    });
+}
+Hover4Animation(".section:nth-of-type(1) .sec-right", ".page4-hover"); // For the second hover
+Hover4Animation(".section:nth-of-type(2) .sec-right", ".page4-hover"); // For the third hover
+
+

@@ -414,6 +414,7 @@ nav button svg{
     border-radius: 50%;
     opacity: 0;
     scale: 0;
+    position: relative;
 }
 
 .page3-center h5{
@@ -502,14 +503,27 @@ nav button svg{
     width: 70%;
     background-color: blanchedalmond;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* First sec-right */
+.section:nth-of-type(1) .sec-right {
+    background-image: url('https://assets-global.website-files.com/64a5e6675a4159253d0ee3e0/65a93ac90b586168e5917ac8_Rhea%20-%20cover_horizontal_low.webp');
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
-.sec-right img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+/* Second sec-right */
+.section:nth-of-type(2) .sec-right {
+    background-image: url('https://assets-global.website-files.com/64a5e6675a4159253d0ee3e0/65cb66041ce86ac3784aaba1_Afrotech%20-%20cover_horizontal.webp');
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
-
 .sec-right video {
     height: 100%;
     width: 100%;
@@ -519,4 +533,209 @@ nav button svg{
     object-fit: cover;
     opacity: 0;
     transition: opacity ease 0.1s;
+}
+
+.page4-hover {
+    background-color: #0BA34E;
+    display: flex;
+    align-items: flex-start;
+    padding: 1vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+
+.page4-hover h5 {
+    font-size: 0.9vw;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    color: #fff;
+    padding-top: 4vw;
+    padding-right: 1vw;
+    margin-top: 0.6vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+}
+
+.page4-hover .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4vw;
+    border-radius: 50%;
+    background-color: #0BA34E;
+}
+
+.page4-hover .icon i {
+    color: #fff;
+    font-size: 3vw;
+
+}
+
+#page5{
+    min-height: 100vh;
+    background-color: #111;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#page5 button {
+    background-color: #0BA34E;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 16px 26px;
+    font-weight: 520;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    border: None;
+    white-space: nowrap;
+    margin-top: 4vw;
+    margin-left: 6vw;
+}
+
+#page5 button svg {
+    height: 1.5rem;
+
+}
+
+#page5-right{
+    width: 70%;
+    margin-top: 4vw;
+}
+
+#page5-right>p {
+    font-size: 2.1vw;
+}
+
+#page5-right>p span {
+    /* background-color: red; */
+    width: 15vw;
+    display: inline-block;
+}
+
+#page5-content {
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 5vh;
+    padding: 5vh 0;
+}
+
+#page5-content h1 {
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+#page5-content #flex {
+    display: flex;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    gap: 1vw;
+}
+
+#page5-content #flex h4 {
+    font-weight: 400;
+    /* text-transform: lowercase; */
+    padding: 4px 8px;
+    border: 1px solid #0BA34E;
+    border-radius: 50px;
+    background-color: #0ba34d1b;
+    color: #08d260;
+    white-space: nowrap;
+    font-size: 1.1rem;
+
+}
+
+.page5-elem {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* background-color: red; */
+    /* padding: 2vh 0; */
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    padding-top: 3vh;
+    padding-bottom: 9vh;
+    overflow: hidden;
+    border-top: 1px solid #333;
+    position: relative;
+}
+
+.page5-elem p {
+    width: 55%;
+    font-size: 0.8vw;
+    position: relative;
+    z-index: 8;
+}
+
+.page5-elem h3 {
+    font-size: 1.6vw;
+    font-weight: 400;
+    position: relative;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    z-index: 8;
+}
+
+.page5-elem i {
+    font-size: 1vw;
+    position: relative;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    z-index: 8;
+}
+
+.over {
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    /* display: none; */
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.page5-elem:hover h3 {
+    padding-left: 1vw;
+
+}
+
+.page5-elem:hover i {
+    padding-right: 1vw;
+}
+
+.page5-elem:hover .over {
+    transform: translateY(0);
+    /* display: initial; */
+    opacity: 1;
+}
+
+.page5-elem:hover {
+    border-top: 2px solid #fff;
+}
+
+
+
+summary::marker {
+    content: "";
+}
+
+.uiux {
+    border-top: 1px solid #333;
+    padding: 3vh 0;
+}
+
+.product {
+    padding: 3vh 0;
+
+    border-top: 1px solid #333;
 }
