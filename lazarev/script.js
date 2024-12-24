@@ -1,4 +1,32 @@
 
+
+
+function loadingAnimation() {
+
+    var tl = gsap.timeline()
+    tl.from("#page1", {
+        opacity: 0,
+        duration: 0.2,
+        delay: 0.2
+    })
+    tl.from("#page1", {
+        transform: "scaleX(0.7) scaleY(0.2) translateY(80%)",
+        borderRadius: "150px",
+        duration: 2,
+        ease: "expo.out"
+    })
+    tl.from("nav", {
+        opacity: 0,
+        delay: -0.2
+    })
+    tl.from("#page1 h1, #page1 p, #page1 div", {
+        opacity: 0,
+        duration: 0.5,
+        stagger: 0.2
+    })
+}
+
+
 function navAnimation() {
     let nav = document.querySelector("nav")
 
@@ -37,7 +65,7 @@ nav.addEventListener("mouseleave", function (e) {
 })
 }
 
-// navAnimation()
+navAnimation()
 
 function Page2Animation() {
     let right = document.querySelectorAll(".right-elem")
@@ -145,7 +173,7 @@ function page3VideoAnimation() {
 
 }
 
-page3VideoAnimation()
+ page3VideoAnimation()
 
 
 function Hover4Animation(targetSelector , hoverSelector) {
@@ -193,4 +221,7 @@ function Hover4Animation(targetSelector , hoverSelector) {
 Hover4Animation(".section:nth-of-type(1) .sec-right", ".page4-hover"); // For the second hover
 Hover4Animation(".section:nth-of-type(2) .sec-right", ".page4-hover"); // For the third hover
 
+
+
+loadingAnimation()
 
