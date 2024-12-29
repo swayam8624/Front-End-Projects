@@ -74,7 +74,8 @@ html , body{
 
 .blocktext h5{
     text-align: right;
-    font-size: 15px;
+    font-size: 1.1vw;
     font-weight: 600;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
 }
