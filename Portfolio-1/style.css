@@ -20,6 +20,15 @@ html , body{
     background-color: #fff;
 }
 
+.bounding {
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .boundingelem {
+    transform: translateY(100%);
+}
+
 #main{
     width: 100%;
     height: auto;
@@ -80,19 +89,29 @@ html , body{
     margin-left: 18vw;
 }
 
+.blocktext {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+}
+
 #heading .blocktext{
     width: fit-content;
 }
 
 .blocktext h5{
-    text-align: right;
     font-size: 1.1vw;
     font-weight: 600;
     letter-spacing: 0.8px;
     text-transform: uppercase;
+    text-align: right !important;
 }
 
 #smallheading{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     margin-top: 12vw;
     padding-right: 3vw;
 }
